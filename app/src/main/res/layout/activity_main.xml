@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    //LINEAR LAYOUT 1
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:textSize="22dp"
+            android:paddingLeft="10dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_nombre"
+            android:id="@+id/et_nombre" />
+
+    </LinearLayout>
+    ///////
+
+    //// LINEAR LAYOUT 2 //////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/sexo"
+            android:textSize="22dp"
+            android:paddingLeft="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_hombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="18dp"
+                android:text="Hombre" />
+
+            <RadioButton
+                android:id="@+id/radio_mujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="18dp"
+                android:text="Mujer" />
+
+            <RadioButton
+                android:id="@+id/radio_nuse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="18dp"
+                android:text="Nusetio xdxd" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    ///////////////////////////
+
+    //// LINEAR LAYOUT 3 /////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/anyoNac"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"/>
+        >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1996"
+            android:id="@+id/et_anyoNac"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    /////////////////////////////////
+
+    //// LINEAR LAYOUT 4 /////
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/vicios"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/drogas"
+                android:id="@+id/cbx_drogas"
+                android:checked="false"
+                android:onClick="onCheckboxClicked"
+                android:textSize="18dp"
+                />
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/juegos"
+                android:id="@+id/cbx_juegos"
+                android:checked="false"
+                android:onClick="onCheckboxClicked"
+                android:textSize="18dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/futbol"
+                android:id="@+id/cbx_futbol"
+                android:checked="false"
+                android:onClick="onCheckboxClicked"
+                android:textSize="18dp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comida"
+                android:id="@+id/cbx_comida"
+                android:checked="false"
+                android:onClick="onCheckboxClicked"
+                android:textSize="18dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/grim_reaper"
+            android:id="@+id/img_greap" />
+
+    </LinearLayout>
+
+
+    //////////////////////////
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular"
+            android:layout_gravity="center"
+            android:id="@+id/btn_calcular"
+            android:elevation="0dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aviso"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

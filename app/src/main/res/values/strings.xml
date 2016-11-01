@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Practica_1</string>
+    <string name="titulo">¿Cuando palmarás?</string>
+    <string name="nombre">Tu numbre:</string>
+    <string name="select_aficion">Aficiones:</string>
+    <string name="hint_nombre">Introduce aquí tu nombre</string>
+    <string name="sexo">Sexo:</string>
+    <string name="anyoNac">Tu año de nacimiento:</string>
+    <string name="vicios">Tus vicios:</string>
+    <string name="calcular">CALCULA TU MUERTE</string>
+    <string name="aviso">Usa esta aplicacion bajo tu propia responsabilidad...</string>
+
+    //Strings persona//
+    <string name="don">Don </string>
+    <string name="dona">Doña </string>
+    <string name="nuse">Lo que quiera que sea que se llama </string>
+
+    //Strings vicio//
+
+    <string name="drogas">Drogas </string>
+    <string name="juegos">Videojuegos</string>
+    <string name="futbol">Futbol</string>
+    <string name="comida">Comida</string>
+
+    //Strings estado//
+
+    3
+    <string name="d">"Te equivocarás de polvos y te meterás un montón de azúcar glass, "</string>
+    5
+    <string name="c">Encontrarás un brocoli en tu hamburguesa, te atragantarás con él y morirás.</string>
+    7
+    <string name="v">Gastarás el poco dinero que te queda en una suscripción a World of Warcraft.</string>
+    11
+    <string name="f">Tu equipo ganará la Champions, celebrándolo, subirás a una farola a hacer el capullo y caerás.</string>
+    8
+    <string name="dv">El Unreal Tournament no funcionará en tu flamante Windows Gaming 20XX, te pondrás como el niño alemán loco y evidentemente palmarás</string>
+    10
+    <string name="df">Te fumaste un peta por cada error de Mathieu, muriste rapido pero con una sonrisa en la cara.</string>
+    14
+    <string name="dc">Te comerás un bocata de un chocolate que te vendieron unos chavales muy simpáticos, -Con lo caro que es tiene que estar bueno, -pensarás.</string>
+    12
+    <string name="vf">"Yo que se tio, no se me ocurre que poner... "</string>
+    16
+    <string name="vc">Morirás de una sobredosis de Mountain Dew y Doritos</string>
+    18
+    <string name="cf">Anularon un gol legal a tu equipo, mientras le decias de todo al arbitro se te atragantó una trozo de pizza.</string>
+    15
+    <string name="dvf">Meterte cristal y jugar al fifa no es una buena idea. Perdiste un partido online en el ultimo minuto y saltaste por la ventana a lo Peter Griffin para dar un voltio.</string>
+    21
+    <string name="dfc">"Yo que se tio, no se me ocurre que poner... "</string>
+    19
+    <string name="dvc">"Yo que se tio, no se me ocurre que poner... "</string>
+    23
+    <string name="vfc">Te hinchaste a "brownies" de la risa.</string>
+    26
+    <string name="dvfc">Estaba claro que palmarias de un momento a otro...</string>
+    no
+    <string name="no">Morirás de aburrimiento</string>
+    
+
+</resources>

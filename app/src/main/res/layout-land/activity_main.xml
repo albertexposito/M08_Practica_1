@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/titulo"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    //LINEAR LAYOUT 1
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        ///////DATOS/////////////////////
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            /////////////////NOMBRE/////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="@string/nombre"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/et_nombre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_nombre" />
+
+            </LinearLayout>
+            ////////////////////////////////////////
+            ///////////SEXO///////////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/sexo"
+                    android:textSize="22dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_hombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Hombre"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_mujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Mujer"
+                        android:textSize="18dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_nuse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="Nusetio xdxd"
+                        android:textSize="18dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            /////////////////////////////////////
+            //////////////AÑO NACIMIENTO//////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/anyoNac"
+                    android:textSize="18dp" />
+                >
+
+                <EditText
+                    android:id="@+id/et_anyoNac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="1996" />
+
+            </LinearLayout>
+
+            //////////////////////////////////////
+            ////////////VICIOS/////////////////
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vicios"
+                    android:textAlignment="center"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/cbx_drogas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:checked="false"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/drogas"
+                            android:textSize="18dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/cbx_juegos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cbx_drogas"
+                            android:checked="false"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/juegos"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/cbx_futbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cbx_juegos"
+                            android:checked="false"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/futbol"
+                            android:textSize="18dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbx_comida"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/cbx_futbol"
+                            android:checked="false"
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/comida"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="@string/aviso"
+                android:textAlignment="center"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+        ////////////////////////////////
+        ///////BOTON Y FOTO//////////
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/grim_reaper" />
+
+            <Button
+                android:id="@+id/btn_calcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="0dp"
+                android:text="@string/calcular" />
+
+        </LinearLayout>
+        /////////////////////////////////
+    </LinearLayout>
+
+
+</LinearLayout>
